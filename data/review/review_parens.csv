@@ -1,0 +1,154 @@
+﻿id,ko_raw,en,paren_contents,paren_types,reviewed,ko_forms
+r0012,가변(변동)추출간격,variable sampling interval,변동,alternative,yes,가변추출간격 | 변동추출간격
+r0047,가우스-조르단 소거(법),Gauss-Jordan elimination,법,optional,yes,가우스-조르단 소거법 | 가우스-조르단 소거
+r0108,개념(적)모집단,conceptual population,적,optional,yes,개념적모집단 | 개념모집단
+r0144,검정[검증](의) 결합,combination of tests,의,optional,yes,검정의 결합 | 검정 결합 | 검증의 결합 | 검증 결합
+r0249,계급의 합동(화),pooling of classes,화,optional,yes,계급의 합동화 | 계급의 합동
+r0257,"계량(형), 거리",metric,형,optional,yes,계량형 | 계량 | 거리
+r0298,"고른 수렴, 균등수렴(성)",uniform convergence,성,optional,yes,고른 수렴 | 균등수렴성 | 균등수렴
+r0299,"고른 연속(성), 균등연속(성)",uniform continuity,성;성,optional;optional,yes,고른 연속성 | 고른 연속 | 균등연속성 | 균등연속
+r0353,공간통계(학),spatial statistics,학,optional,yes,공간통계학 | 공간통계
+r0373,공정(한) 게임,equitable game,한,optional,yes,공정한 게임 | 공정 게임
+r0445,교차타당성(입증),cross-validation,입증,optional,yes,교차타당성입증 | 교차타당성
+r0485,국소(적)가측인,locally measurable,적,optional,yes,국소적가측인 | 국소가측인
+r0486,국소(적)최강력 검정[검증],locally most powerful test,적,optional,yes,국소적최강력 검정 | 국소적최강력 검증 | 국소최강력 검정 | 국소최강력 검증
+r0487,국소(적)최적설계,locally optimal design,적,optional,yes,국소적최적설계 | 국소최적설계
+r0565,그룹(화) 자료,grouped data,화,optional,yes,그룹화 자료 | 그룹 자료
+r0575,극단(의),extremal,의,optional,yes,극단의 | 극단
+r0585,"극한, 한계, 극한(값)",limit,값,optional,yes,극한 | 한계 | 극한값
+r0636,기술통계(학),descriptive statistics,학,optional,yes,기술통계학 | 기술통계
+r0656,기준년(도),base year,도,optional,yes,기준년도 | 기준년
+r0753,누적합(관리)도,cumulative sum chart,관리,optional,yes,누적합관리도 | 누적합도
+r0843,단(일)반응값,single response,일,optional,yes,단일반응값 | 단반응값
+r0854,단순(한),naïve,한,optional,yes,단순한 | 단순
+r0881,단일연결(법),single linkage,법,optional,yes,단일연결법 | 단일연결
+r0947,대치(법),imputation,법,optional,yes,대치법 | 대치
+r0948,대칭(적),symmetric,적,optional,yes,대칭적 | 대칭
+r0968,대표(적)표본,representative sample,적,optional,yes,대표적표본 | 대표표본
+r1001,독립(적)이며 같은 분포를 따르는,independently and identically distributed,적,optional,yes,독립적이며 같은 분포를 따르는 | 독립이며 같은 분포를 따르는
+r1027,동시(적),simultaneous,적,optional,yes,동시적 | 동시
+r1225,"멱등(인), 제곱이 같은",idempotent,인,optional,yes,멱등인 | 멱등 | 제곱이 같은
+r1234,명목(형),nominal,형,optional,yes,명목형 | 명목
+r1235,명목(형)변수,nominal variable,형,optional,yes,명목형변수 | 명목변수
+r1277,모형기반표본추출(법),model based sampling,법,optional,yes,모형기반표본추출법 | 모형기반표본추출
+r1301,무관(한),unrelated,한,optional,yes,무관한 | 무관
+r1310,무어-펜로즈 역(행렬),Moore-Penrose inverse,행렬,optional,yes,무어-펜로즈 역행렬 | 무어-펜로즈 역
+r1328,무한분해가능(한),infinitely divisible,한,optional,yes,무한분해가능한 | 무한분해가능
+r1423,베이즈(적) 추론,Bayesian inference,적,optional,yes,베이즈적 추론 | 베이즈 추론
+r1447,변량(형)통계,statistics of variates,형,optional,yes,변량형통계 | 변량통계
+r1452,변수(형)통계,statistics of variables,형,optional,yes,변수형통계 | 변수통계
+r1460,"변이(성), 변동",variability,성,optional,yes,변이성 | 변이 | 변동
+r1498,"보조(적), 보각의",supplementary,적,optional,yes,보조적 | 보조 | 보각의
+r1532,볼록(한),convex,한,optional,yes,볼록한 | 볼록
+r1552,부분균형배열(표),partially balanced array,표,optional,yes,부분균형배열표 | 부분균형배열
+r1600,분류(학),taxonomy,학,optional,yes,분류학 | 분류
+r1641,"분포무관(한), 분포에 의존하지 않는",distribution-free,한,optional,yes,분포무관한 | 분포무관 | 분포에 의존하지 않는
+r1679,불연속(성),discontinuity,성,optional,yes,불연속성 | 불연속
+r1759,"비모수적, 비파라미터(적)",nonparametric,적,optional,yes,비모수적 | 비파라미터적 | 비파라미터
+r1763,"비부합(의), 비일치(의)",discordant,의;의,optional;optional,yes,비부합의 | 비부합 | 비일치의 | 비일치
+r1790,비음(의),nonnegative,의,optional,yes,비음의 | 비음
+r1821,비중심(성)모수,noncentrality parameter,성,optional,yes,비중심성모수 | 비중심모수
+r1875,반복(가능)성,repeatability,가능,optional,yes,반복가능성 | 반복성
+r1884,반복선형보간(법),iterated linear interpolation,법,optional,yes,반복선형보간법 | 반복선형보간
+r2004,속성(형)통계,statistics of attributes,형,optional,yes,속성형통계 | 속성통계
+r2045,수정관리한계(선),modified control limit,선,optional,yes,수정관리한계선 | 수정관리한계
+r2059,수치(의),numerical,의,optional,yes,수치의 | 수치
+r2064,수치적 불안정(성),numerical instability,성,optional,yes,수치적 불안정성 | 수치적 불안정
+r2081,"순서, 계, 차(수)",order,수,optional,yes,순서 | 계 | 차수 | 차
+r2124,"순차(적), 축차(적)",sequential,적;적,optional;optional,yes,순차적 | 순차 | 축차적 | 축차
+r2125,순차(적)검정[검증],sequential test,적,optional,yes,순차적검정 | 순차적검증 | 순차검정 | 순차검증
+r2126,순차(적)분석,sequential analysis,적,optional,yes,순차적분석 | 순차분석
+r2152,숫자(의),numeral,의,optional,yes,숫자의 | 숫자
+r2192,"승법극한추정량, 곱(의)극한추정량",product-limit estimator,의,optional,yes,승법극한추정량 | 곱의극한추정량 | 곱극한추정량
+r2255,"신뢰대(역), 신뢰띠",confidence band,역,optional,yes,신뢰대역 | 신뢰대 | 신뢰띠
+r2303,십분위(간)범위,interdecile range,간,optional,yes,십분위간범위 | 십분위범위
+r2340,사분위(간)범위,interquartile range,간,optional,yes,사분위간범위 | 사분위범위
+r2361,사전독립(적),prior independent,적,optional,yes,사전독립적 | 사전독립
+r2396,"산포, 퍼짐(성)",dispersion,성,optional,yes,산포 | 퍼짐성 | 퍼짐
+r2427,삼항(의),trinomial,의,optional,yes,삼항의 | 삼항
+r2484,상호도달가능(한),communicating,한,optional,yes,상호도달가능한 | 상호도달가능
+r2486,상호독립(적),mutually independent,적,optional,yes,상호독립적 | 상호독립
+r2487,상호배반(적),mutually exclusive,적,optional,yes,상호배반적 | 상호배반
+r2550,선형계획(법),linear programming,법,optional,yes,선형계획법 | 선형계획
+r2556,선형독립(인),linearly independent,인,optional,yes,선형독립인 | 선형독립
+r2571,선형종속(인),linearly dependent,인,optional,yes,선형종속인 | 선형종속
+r2590,유사(의사)값,pseudo value,의사,alternative,yes,유사값 | 의사값
+r2621,"유한모집단수정(인수, 항)",finite population correction (factor),"인수, 항",annotation,yes,유한모집단수정
+r2667,이단(계)설계,two-stage design,계,optional,yes,이단계설계 | 이단설계
+r2802,이항(의),binomial,의,optional,yes,이항의 | 이항
+r2843,인자적재(값),factor loading,값,optional,yes,인자적재값 | 인자적재
+r2882,"일시(적)상태, 일시성상태",transient state,적,optional,yes,일시적상태 | 일시상태 | 일시성상태
+r2884,일원배치(법),one-way layout,법,optional,yes,일원배치법 | 일원배치
+r2890,일치(적),consistent,적,optional,yes,일치적 | 일치
+r2908,"임의, 랜덤, 무작위, 확률(적)",random,적,optional,yes,임의 | 랜덤 | 무작위 | 확률적 | 확률
+r3020,에르미트 보간(법),Hermite interpolation,법,optional,yes,에르미트 보간법 | 에르미트 보간
+r3040,"역(의), 역수의, 서로간의",reciprocal,의,optional,yes,역의 | 역 | 역수의 | 서로간의
+r3045,역보간(법),inverse interpolation,법,optional,yes,역보간법 | 역보간
+r3050,역원(소),inverse element,소,optional,yes,역원소 | 역원
+r3095,"연속적, 연속(의)",continuous,의,optional,yes,연속적 | 연속의 | 연속
+r3140,영향(력)곡선,influence curve,력,optional,yes,영향력곡선 | 영향곡선
+r3141,영향(력)함수,influence function,력,optional,yes,영향력함수 | 영향함수
+r3142,"영향(적)관측, 주영향관측",influential observation,적,optional,yes,영향적관측 | 영향관측 | 주영향관측
+r3191,오차의 합동(화),pooling of error,화,optional,yes,오차의 합동화 | 오차의 합동
+r3242,욕조(형)곡선,bath tub curve,형,optional,yes,욕조형곡선 | 욕조곡선
+r3334,제약(조건),constraint,조건,optional,yes,제약조건 | 제약
+r3360,조건부(의),conditional,의,optional,yes,조건부의 | 조건부
+r3366,조건부독립(성),conditional independence,성,optional,yes,조건부독립성 | 조건부독립
+r3375,조건부신뢰성(도),conditional reliability,도,optional,yes,조건부신뢰성도 | 조건부신뢰성
+r3408,"종속(적), 의존(적)",dependent,적;적,optional;optional,yes,종속적 | 종속 | 의존적 | 의존
+r3442,주대각(선),leading diagonal,선,optional,yes,주대각선 | 주대각
+r3443,주대각(선),main diagonal,선,optional,yes,주대각선 | 주대각
+r3527,중복설계(법),overlap design,법,optional,yes,중복설계법 | 중복설계
+r3553,중위적 비편향(인),median unbiased,인,optional,yes,중위적 비편향인 | 중위적 비편향
+r3563,증가(하는),increasing,하는,optional,yes,증가하는 | 증가
+r3576,지렛대값(지레값),leverage value,지레값,alternative,yes,지렛대값 | 지레값
+r3578,지렛대점(지레점),leverage point,지레점,alternative,yes,지렛대점 | 지레점
+r3606,"지침(서), 프로토콜",protocol,서,optional,yes,지침서 | 지침 | 프로토콜
+r3683,짝(의)[쌍체] t 검정[검증],paired t-test,의,optional,yes,짝의 t 검정 | 짝의 t 검증 | 쌍체 t 검정 | 쌍체 t 검증 | 짝 t 검정 | 짝 t 검증
+r3686,"짝비교, 쌍(체)비교, 대응비교",paired comparison,체,optional,yes,짝비교 | 쌍체비교 | 쌍비교 | 대응비교
+r3691,"짝자료, 쌍(체)자료",paired data,체,optional,yes,짝자료 | 쌍체자료 | 쌍자료
+r3767,재귀(성)상태,recurrent state,성,optional,yes,재귀성상태 | 재귀상태
+r3781,재현(가능)성,reproducibility,가능,optional,yes,재현가능성 | 재현성
+r3792,적분가능(한),integrable,한,optional,yes,적분가능한 | 적분가능
+r3804,적합(성)결여,lack of fit,성,optional,yes,적합성결여 | 적합결여
+r3809,전개(식),expansion,식,optional,yes,전개식 | 전개
+r3862,절반파종대상(재배법),half-drill strip,재배법,optional,yes,절반파종대상재배법 | 절반파종대상
+r3877,점(마다) 수렴,pointwise convergence,마다,optional,yes,점마다 수렴 | 점 수렴
+r3882,점근(적)표준오차,asymptotic standard error,적,optional,yes,점근적표준오차 | 점근표준오차
+r3897,점근적(인),asymptotic,인,optional,yes,점근적인 | 점근적
+r3970,"정상(적), 시불변(적), 정류(적)",stationary,적;적;적,optional;optional;optional,yes,정상적 | 정상 | 시불변적 | 시불변 | 정류적 | 정류
+r3971,정상(점),peak,점,optional,yes,정상점 | 정상
+r3985,정수계획(법),integer programming,법,optional,yes,정수계획법 | 정수계획
+r3992,"정준(적), 표준(적)",canonical,적;적,optional;optional,yes,정준적 | 정준 | 표준적 | 표준
+r3999,"정준연결(함수), 표준연결",canonical link,함수,optional,yes,정준연결함수 | 정준연결 | 표준연결
+r4059,척도(화)이탈도[편차],scaled deviance,화,optional,yes,척도화이탈도 | 척도화이편차 | 척도이탈도 | 척도이편차
+r4123,최대불변(량),maximal invariant,량,optional,yes,최대불변량 | 최대불변
+r4162,최소우호(적),least favorable,적,optional,yes,최소우호적 | 최소우호
+r4181,"최장연결(법), 완전연결(법)",complete linkage,법;법,optional;optional,yes,최장연결법 | 최장연결 | 완전연결법 | 완전연결
+r4191,최적배분(법),optimum allocation,법,optional,yes,최적배분법 | 최적배분
+r4250,출생(대)사망 비,birth-death ratio,대,optional,yes,출생대사망 비 | 출생사망 비
+r4272,층화 이단(계)표본추출,stratified two-stage sampling,계,optional,yes,층화 이단계표본추출 | 층화 이단표본추출
+r4342,크기비례(표본)추출법,probability proportional to size sampling,표본,optional,yes,크기비례표본추출법 | 크기비례추출법
+r4421,"티켓 표집, 티켓 추출(법)",ticket sampling,법,optional,yes,티켓 표집 | 티켓 추출법 | 티켓 추출
+r4422,타당성(검사),validation,검사,optional,yes,타당성검사 | 타당성
+r4500,"편향(된), 치우친",biased,된,optional,yes,편향된 | 편향 | 치우친
+r4525,평균대체(법),mean imputation,법,optional,yes,평균대체법 | 평균대체
+r4537,평균연결(법),average linkage,법,optional,yes,평균연결법 | 평균연결
+r4576,"평행(선), 나란한",parallel,선,optional,yes,평행선 | 평행 | 나란한
+r4577,평행(성),parallelism,성,optional,yes,평행성 | 평행
+r4589,평활(방)법,smoothing method,방,optional,yes,평활방법 | 평활법
+r4590,"평활(화), 매끄럽게함",smoothing,화,optional,yes,평활화 | 평활 | 매끄럽게함
+r4624,포화(된),saturated,된,optional,yes,포화된 | 포화
+r4635,표류(하는) 브라운 운동,Brownian motion with drift,하는,optional,yes,표류하는 브라운 운동 | 표류 브라운 운동
+r4638,표본(의) 크기,sample size,의,optional,yes,표본의 크기 | 표본 크기
+r4821,행렬(의) 대각화,matrix diagonalization,의,optional,yes,행렬의 대각화 | 행렬 대각화
+r4889,"확대행렬, 덧붙임(덧붙인) 행렬",augmented matrix,덧붙인,alternative,yes,확대행렬 | 덧붙임 행렬 | 덧붙인 행렬
+r4892,확률(적)변수,stochastic variable,적,optional,yes,확률적변수 | 확률변수
+r4931,확률적 회귀대체(법),stochastic regression imputation,법,optional,yes,확률적 회귀대체법 | 확률적 회귀대체
+r4934,확률적으로 큰(작은),stochastically larger(smaller),작은,optional,yes,확률적으로 큰작은 | 확률적으로 큰
+r4952,확산사전(분포),diffuse prior,분포,optional,yes,확산사전분포 | 확산사전
+r4961,환경통계(학),environmental statistics,학,optional,yes,환경통계학 | 환경통계
+r4995,효율(성),efficiency,성,optional,yes,효율성 | 효율
+r4996,효율(적)추정,efficient estimation,적,optional,yes,효율적추정 | 효율추정
+r5009,후향(적)연구,retrospective study,적,optional,yes,후향적연구 | 후향연구
+r5020,희박(한)행렬,sparse matrix,한,optional,yes,희박한행렬 | 희박행렬

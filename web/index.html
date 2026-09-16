@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>통계용어 영한·한영 사전</title>
+<meta name="description" content="한국통계학회 통계용어를 영어와 한국어 양방향으로 찾는 사전">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="editbar" class="editbar" hidden>
+  <div class="editbar-inner">
+    <p class="editbar-note"><strong>편집 모드</strong> <span id="edit-summary">변경 0건</span>
+      <span class="muted">여기서 바꾼 내용은 내보내서 저장소에 반영하기 전까지 이 브라우저에만 저장됩니다.</span></p>
+    <div class="editbar-actions">
+      <button type="button" class="btn btn-solid" data-action="new">새 용어 추가</button>
+      <button type="button" class="btn" data-action="changes">변경사항</button>
+      <button type="button" class="btn" data-action="deleted">삭제된 용어</button>
+      <button type="button" class="btn" data-action="export">내보내기</button>
+      <button type="button" class="btn" data-action="import">가져오기</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <div><h1 class="title">통계용어 사전</h1><p class="subtitle">한국통계학회 용어를 영어로도, 한국어로도 찾습니다</p></div>
+    <label class="switch"><input type="checkbox" id="edit-toggle"> 편집 모드</label>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="search" aria-label="용어 검색">
+    <div class="dir" role="radiogroup" aria-label="찾는 방향">
+      <button type="button" role="radio" data-dir="auto" aria-checked="true">자동</button>
+      <button type="button" role="radio" data-dir="en" aria-checked="false"><span lang="en">EN</span> → 한</button>
+      <button type="button" role="radio" data-dir="ko" aria-checked="false">한 → <span lang="en">EN</span></button>
+    </div>
+    <label for="q" class="sr-only">용어 입력</label>
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+      placeholder="likelihood ratio, 우도비, ㄱㅈㄱㅅ, REML" autofocus>
+    <p id="status" class="status" aria-live="polite">사전을 불러오는 중입니다.</p>
+  </section>
+
+  <nav class="index" aria-label="색인">
+    <div class="index-tabs" role="tablist">
+      <button type="button" role="tab" data-index="en" aria-selected="true">영한 색인</button>
+      <button type="button" role="tab" data-index="ko" aria-selected="false">한영 색인</button>
+    </div>
+    <div id="letters" class="letters"></div>
+  </nav>
+
+  <section id="results" class="results" aria-live="polite"></section>
+  <div class="more-row"><button type="button" id="more" class="btn" hidden>더 보기</button></div>
+</main>
+
+<footer class="wrap foot">
+  <p>출처: 한국통계학회 통계용어 (<a href="https://kss.or.kr/homepage/custom/statistics">kss.or.kr</a>).
+    <span class="badge badge-added">추가</span> <span class="badge badge-updated">수정</span> 표시가 있는 항목은 학회 원본과 내용이 다릅니다.</p>
+  <p><a href="data/통계용어사전_영한_한영.xlsx" download>영한·한영 사전 엑셀 내려받기</a></p>
+  <p id="meta" class="muted"></p>
+</footer>
+
+<dialog id="form-dialog" class="dialog">
+  <form method="dialog" id="term-form" novalidate>
+    <h2 id="form-title">새 용어 추가</h2>
+    <div class="field">
+      <label for="f-ko">한글 원문 <span class="req">필수</span></label>
+      <input id="f-ko" name="ko_raw" required>
+      <p class="hint">쉼표는 동의어, [ ]는 대체어, ( )는 소괄호입니다. 예: 가능도[우도]비 검정[검증]</p>
+    </div>
+    <div id="paren-fields" class="field" hidden></div>
+    <div class="field">
+      <label for="f-en">영문 원문 <span class="req">필수</span></label>
+      <input id="f-en" name="en_raw" lang="en" required>
+      <p class="hint">의미 번호는 power (2), 약어는 (SUR) 또는 ; REML 형식으로 적습니다.</p>
+    </div>
+    <div class="preview" id="preview" aria-live="polite"></div>
+    <details class="more-fields">
+      <summary>뜻풀이·출처 메모</summary>
+      <div class="field"><label for="f-def">뜻풀이</label><textarea id="f-def" name="definition" rows="3"></textarea></div>
+      <div class="field"><label for="f-src">출처 메모</label><input id="f-src" name="source_note"></div>
+    </details>
+    <div class="field-row">
+      <div class="field"><label for="f-reason">변경 사유</label><input id="f-reason" name="reason"></div>
+      <div class="field"><label for="f-editor">편집자</label><input id="f-editor" name="editor"></div>
+    </div>
+    <label class="check"><input type="checkbox" id="f-draft"> 초안으로 저장 (빌드에 반영하지 않음)</label>
+    <p id="form-error" class="error" role="alert"></p>
+    <div class="dialog-actions">
+      <button type="button" class="btn" value="cancel" data-close>취소</button>
+      <button type="submit" class="btn btn-solid" id="form-save">저장</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="delete-dialog" class="dialog dialog-sm">
+  <form method="dialog" id="delete-form">
+    <h2>용어 삭제</h2>
+    <p id="delete-target"></p>
+    <div class="field"><label for="d-reason">삭제 사유 <span class="req">필수</span></label><input id="d-reason" required></div>
+    <p class="hint">삭제한 용어는 '삭제된 용어'에서 복원할 수 있습니다.</p>
+    <div class="dialog-actions">
+      <button type="button" class="btn" data-close>취소</button>
+      <button type="submit" class="btn btn-danger">삭제</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="list-dialog" class="dialog dialog-wide">
+  <div class="list-head"><h2 id="list-title"></h2><button type="button" class="btn" data-close>닫기</button></div>
+  <div id="list-body"></div>
+</dialog>
+
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script src="core.js"></script>
+<script src="editor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

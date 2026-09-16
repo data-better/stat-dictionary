@@ -1,0 +1,32 @@
+name: build-and-deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: pip install -r requirements.txt
+      - name: 사전 빌드
+        run: python scripts/build_dict.py   # 소괄호 검토를 마치면 --strict 를 붙이세요
+      - name: 수용 기준 테스트
+        run: python scripts/test_build.py
+      - name: 엑셀 내보내기
+        run: python scripts/export_xlsx.py && cp dist/*.xlsx web/data/
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: web }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4

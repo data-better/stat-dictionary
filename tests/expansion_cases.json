@@ -1,0 +1,38 @@
+{
+  "ko": [
+    {"raw": "가능도, 우도", "forms": ["가능도", "우도"]},
+    {"raw": "가능도[우도]비 검정[검증]", "forms": ["가능도비 검정", "가능도비 검증", "우도비 검정", "우도비 검증"]},
+    {"raw": "가변추출[표집]비", "forms": ["가변추출비", "가변표집비"]},
+    {"raw": "기각표본추출[기각표집]", "forms": ["기각표본추출", "기각표집"]},
+    {"raw": "라틴 방격[정방,정사각형]", "forms": ["라틴 방격", "라틴 정방", "라틴 정사각형"]},
+    {"raw": "누적도수[빈도]곡선", "forms": ["누적도수곡선", "누적빈도곡선"]},
+    {"raw": "가우스-조르단 소거(법)", "forms": ["가우스-조르단 소거법", "가우스-조르단 소거"], "paren": ["optional"]},
+    {"raw": "가변(변동)추출간격", "forms": ["가변추출간격", "변동추출간격"], "paren": ["alternative"]},
+    {"raw": "지렛대점(지레점)", "forms": ["지렛대점", "지레점"], "paren": ["alternative"]},
+    {"raw": "표류(하는) 브라운 운동", "forms": ["표류하는 브라운 운동", "표류 브라운 운동"], "paren": ["optional"]},
+    {"raw": "계수(階數)", "forms": ["계수"], "notes": ["階數"]},
+    {"raw": "영일(0-1) 법칙", "forms": ["영일 법칙"], "notes": ["0-1"]},
+    {"raw": "가변(변동)추출간격", "paren_types": ["optional"], "forms": ["가변변동추출간격", "가변추출간격"], "paren": ["optional"]},
+    {"raw": "개념(적)모집단", "paren_types": ["annotation"], "forms": ["개념모집단"], "notes": ["적"]},
+    {"raw": "짝(의)[쌍체] t 검정[검증]", "forms": ["짝의 t 검정", "짝의 t 검증", "쌍체 t 검정", "쌍체 t 검증", "짝 t 검정", "짝 t 검증"], "paren": ["optional"]},
+    {"raw": "등각예측,  컨포멀\u00a0예측", "forms": ["등각예측", "컨포멀 예측"]},
+    {"raw": "가[나", "error": true},
+    {"raw": "가(나[다])", "error": true},
+    {"raw": "   ", "error": true},
+    {"raw": "a[b,c,d] e[f,g] h[i]", "error": true}
+  ],
+  "en": [
+    {"raw": "likelihood ratio test", "en": "likelihood ratio test", "variants": [], "abbr": [], "sense": null, "compact": "likelihoodratiotest"},
+    {"raw": "power (2)", "en": "power", "variants": [], "abbr": [], "sense": 2, "compact": "power"},
+    {"raw": "restricted\u00a0 maximum likelihood; REML", "en": "restricted maximum likelihood", "variants": [], "abbr": ["REML"], "sense": null, "compact": "restrictedmaximumlikelihood"},
+    {"raw": "seemingly unrelated regression(SUR)", "en": "seemingly unrelated regression", "variants": [], "abbr": ["SUR"], "sense": null, "compact": "seeminglyunrelatedregression"},
+    {"raw": "locally best invariant(LBI) test", "en": "locally best invariant test", "variants": [], "abbr": ["LBI"], "sense": null, "compact": "locallybestinvarianttest"},
+    {"raw": "transform, transformation", "en": "transform", "variants": ["transformation"], "abbr": [], "sense": null, "compact": "transform"},
+    {"raw": "imbedding / embedding", "en": "imbedding", "variants": ["embedding"], "abbr": [], "sense": null, "compact": "imbedding"},
+    {"raw": "Lévy process", "en": "Lévy process", "variants": [], "abbr": [], "sense": null, "compact": "levyprocess"},
+    {"raw": "log-linear model", "en": "log-linear model", "variants": [], "abbr": [], "sense": null, "compact": "loglinearmodel"},
+    {"raw": "Gabriel's test", "en": "Gabriel's test", "variants": [], "abbr": [], "sense": null, "compact": "gabrielstest"},
+    {"raw": "", "error": true}
+  ],
+  "choseong": [["결정계수", "ㄱㅈㄱㅅ"], ["t 검정", "tㄱㅈ"]]
+}
